@@ -28,6 +28,10 @@ class CarController extends Controller
          $car->telefono = $request->telefono;
          $car->color = $request->color;
          $car->estado = $request->estado;
+
+         $car->save();
+
+         return redirect()->route('car.index');
        }
 
 
