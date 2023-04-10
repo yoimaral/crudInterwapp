@@ -20,7 +20,7 @@
         <table class="table table-striped position-sticky">
 
             <div class="justify-content-right">
-                <a class="btn btn-outline-secondary" href="{{ route('agen.create') }}">Crear agenda</a>
+                <a class="btn btn-outline-secondary" href="{{ route('car.create') }}">Crear agenda</a>
             </div>
 
 
