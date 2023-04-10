@@ -42,7 +42,7 @@
                    <td>{{ $cars->id}}</td>
                    <td>{{ $cars->placa }}</td>
                    <td>{{ $cars->telefono }}</td>
-                   <td>{{ $cars->color }}</td>
+                   <td>{{ $cars->color}}</td>
                    <td>{{ $cars->actualizar }}</td>
 
 
