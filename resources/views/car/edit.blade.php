@@ -9,7 +9,7 @@
                 <div class="card-body">
 
 
-                    <form method="POST" action="{{ route('car.store') }}">
+                    <form method="POST" action="{{ route('car.update') }}">
                         @csrf
 
                        <div class="box box-info padding-1">
