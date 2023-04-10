@@ -26,19 +26,24 @@
 
             <thead>
                 <tr>
-                    <th class="text-center">fecha</th>
                     <th class="text-center">ID Car</th>
                     <th class="text-center">Placa</th>
                     <th class="text-center">Telefono</th>
                     <th class="text-center">Color</th>
+                    <th class="text-center">Eliminar</th>
                     <th class="text-center">Actualizar</th>
 
                 </tr>
             </thead>
             <tbody>
-                @foreach ($car as $$cars)
+                @foreach ($car as $cars)
                 <tr>
 
+                   <td>{{ $cars->id}}</td>
+                   <td>{{ $cars->placa }}</td>
+                   <td>{{ $cars->telefono }}</td>
+                   <td>{{ $cars->color }}</td>
+                   <td>{{ $cars->actualizar }}</td>
 
 
                     <td class="text-center">

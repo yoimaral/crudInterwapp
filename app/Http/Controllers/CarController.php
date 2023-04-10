@@ -2,16 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Car;
+use Illuminate\Http\Request;
+
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
-class Car extends Controller
+class CarController extends Controller
 {
        public function index(){
        return view(
        'car.index',
-       ['pets' => Pet::all()
+       ['car' => Car::all()
        ]);
        }
 
