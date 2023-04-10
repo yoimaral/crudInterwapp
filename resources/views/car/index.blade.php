@@ -16,13 +16,12 @@
     <h1 class="text-center">Información De Agenda</h1>
 
 
-    <div class="p-5 ">
+    <div class="p-5">
         <table class="table table-striped position-sticky">
 
             <div class="justify-content-right">
                 <a class="btn btn-outline-secondary" href="{{ route('car.create') }}">Crear agenda</a>
             </div>
-
 
             <thead>
                 <tr>
@@ -30,12 +29,13 @@
                     <th class="text-center">Placa</th>
                     <th class="text-center">Telefono</th>
                     <th class="text-center">Color</th>
+                    <th class="text-center">Estado</th>
                     <th class="text-center">Eliminar</th>
                     <th class="text-center">Actualizar</th>
 
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="text-center">
                 @foreach ($car as $cars)
                 <tr>
 
@@ -43,7 +43,7 @@
                    <td>{{ $cars->placa }}</td>
                    <td>{{ $cars->telefono }}</td>
                    <td>{{ $cars->color}}</td>
-                   <td>{{ $cars->actualizar }}</td>
+                   <td>{{ $cars->estado}}</td>
 
 
                     <td class="text-center">
