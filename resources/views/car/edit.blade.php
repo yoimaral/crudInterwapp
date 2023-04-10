@@ -9,8 +9,9 @@
                 <div class="card-body">
 
 
-                    <form method="POST" action="{{ route('car.update') }}">
+                    <form method="POST" action="{{ route('car.update', $car) }}">
                         @csrf
+                        @method('PATCH')
 
                        <div class="box box-info padding-1">
                            <div class="box-body">
@@ -18,32 +19,32 @@
                                <div class="form-group">
 
                                    <label for="exampleInputPlaca" class="form-label">Placa</label>
-                                   <input name="placa" type="text" class="form-control" id="placa" required>
+                                   <input vale="{{ $car->placa}}" name="placa" type="text" class="form-control" id="placa" required>
                                </div>
 
                                <div class="form-group">
 
                                    <label for="exampleInputTelefono" class="form-label">telefono</label>
-                                   <input name="telefono" type="number" class="form-control" id="telefono" >
+                                   <input vale="{{$car->telefono}}" name="telefono" type="number" class="form-control" id="telefono" >
                                </div>
 
                                <div class="form-group">
 
                                    <label for="exampleInputColor" class="form-label">Color</label>
-                                   <input name="color" type="text" class="form-control" id="color">
+                                   <input vale="{{$car->color}}" name="color" type="text" class="form-control" id="color">
                                </div>
 
                                <div class="form-group">
 
                                    <label for="exampleInputEstado" class="form-label">Estado</label>
-                                   <input name="estado" type="text" class="form-control" id="estado" required>
+                                   <input vale="{{$car->estado}}" name="estado" type="text" class="form-control" id="estado" required>
                                </div>
                                <div class="form-group">
 
 
                            </div>
                            <div class="mb-3">
-                               <button type="submit" class="btn btn-primary">Crear</button>
+                               <button type="submit" class="btn btn-primary">Actualizar</button>
                                <a href="{{ route('car.index') }}" type="submit" class="btn btn-primary">Volver</a>
                            </div>
 

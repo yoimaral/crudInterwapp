@@ -35,20 +35,29 @@ class CarController extends Controller
        }
 
 
-       public function edit(){
-       return view('car.create', compact('car'));
+       public function edit(Car $car){
+       return view('car.edit', compact('car'));
        }
 
-       public function update(){
+       public function update(Request $request, Car $car){
 
+            $car->update([
+            'placa' => $request->placa,
+            'telefono'=> $request->telefono,
+            'color'=> $request->color,
+            'estado'=> $request->estado
+    ]);
 
+    return redirect()->route('car.index');
 
        }
 
 
-       public function destroy(){
+       public function destroy(Car $car){
 
+$car->delete();
 
+return redirect()->route('car.index');
 
        }
 
