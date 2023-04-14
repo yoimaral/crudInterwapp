@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CarController;
+use App\Http\Controllers\ExportController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +19,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/exporte', ExportController::class,'export');
 Route::resource('/car', CarController::class);
+
+
+
+
