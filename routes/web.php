@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/exporte', ExportController::class,'export');
+Route::get('/export', ExportController::class,'export');
 Route::resource('/car', CarController::class);
 
 

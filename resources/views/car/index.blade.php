@@ -23,6 +23,10 @@
                 <a class="btn btn-outline-secondary" href="{{ route('car.create') }}">Crear agenda</a>
             </div>
 
+            <div class="justify-content-right">
+                <a class="btn btn-outline-secondary" href="{{ route('export') }}">Exportar listado</a>
+            </div>
+
             <thead>
                 <tr>
                     <th class="text-center">ID Car</th>
