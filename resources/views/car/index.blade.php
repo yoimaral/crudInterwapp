@@ -19,13 +19,17 @@
     <div class="p-5">
         <table class="table table-striped position-sticky">
 
-            <div class="justify-content-right">
+
+        <div class="row">
+            <div class="col-md-2 ">
                 <a class="btn btn-outline-secondary" href="{{ route('car.create') }}">Crear agenda</a>
             </div>
 
-            <div class="justify-content-right">
+            <div class="col-md-2 col-md-offset-9 text-right">
                 <a class="btn btn-outline-secondary" href="{{ route('export') }}">Exportar listado</a>
             </div>
+        </div>
+
 
             <thead>
                 <tr>
