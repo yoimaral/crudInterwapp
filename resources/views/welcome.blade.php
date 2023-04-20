@@ -14,10 +14,33 @@
 
 <body>
 
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="true" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Autos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Accesorios</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="">Welcome </h5>
+    <p class="card-text">Bienvenido al store de autos ferrary.</p>
+
+    <a class="btn btn-outline-primary" href="{{route('car.index')}}">Registro carros</a>
+  </div>
+</div>
+
+
     <div class="container">
         <div class="col-md-6 ">
 
-            <a class="btn btn-outline-primary" href="{{route('car.index')}}">Registro carros</a>
+
 
         </div>
     </div>
